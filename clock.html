@@ -1,0 +1,14 @@
+<html>
+<head>
+</head>
+<body>
+  <script language="javascript">
+    stop = window.setInterval("document.form1.text2.value = document.form1.text1.value", 3000);
+  </script>
+  <form name="form1">
+    Input: <input type="text" name="text1" value="input"/><br/>
+    Update: <input type="text" name="text2" value="update"/><br/>
+    <input type="button" name="button1" value="Stop Update" onclick="clearInterval(stop)"/>
+  </form>
+</body>
+</html>

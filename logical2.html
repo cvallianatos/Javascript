@@ -1,0 +1,18 @@
+<html>
+<head>
+</head>
+<body>
+  <script language="javascript">
+    daysOfMonth = 29;
+    Year = 2000;
+    if (daysOfMonth == 28 || daysOfMonth == 29)
+      month = "February";
+    if (daysOfMonth == 29 && (Year % 4) == 0)
+      LeapYear = true;
+    document.write("Days of Month: " + daysOfMonth + "<br>");
+    document.write("Month: " + month + "<br>");
+    document.write("Year: " + Year + "<br>");
+    document.write("Leap Year: " + LeapYear + "<br>");
+  </script>
+</body>
+</html>

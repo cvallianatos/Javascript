@@ -1,0 +1,13 @@
+<html>
+<head>
+</head>
+<body>
+  <form name="form1">
+    <input type="text" name="text1"/>
+    <input type="button" name="button1" value="Stop" onclick="window.clearInterval(stop)"/>
+  </form>
+  <script language="javascript">
+    stop = window.setInterval("time = new Date();document.form1.text1.value = time.toLocaleString()",1000);
+  </script>
+</body>
+</html>
